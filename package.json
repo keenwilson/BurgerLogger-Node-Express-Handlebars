@@ -1,5 +1,5 @@
 {
-  "name": "burger",
+  "name": "burger_mvc_design",
   "version": "1.0.0",
   "description": "A burger logger with MySQL, Node, Express, Handlebars, and a homemade ORM (yum!)",
   "main": "server.js",
@@ -19,6 +19,7 @@
   "dependencies": {
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
+    "handlebars-helper-css": "^0.1.0",
     "mysql": "^2.16.0"
   }
 }
