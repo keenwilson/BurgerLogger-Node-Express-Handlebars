@@ -5,10 +5,13 @@
 // Dependencies
 // =============================================================
 var express = require("express");
+var exphbs = require("express-handlebars");
 
-// Sets up the Express App
-// =============================================================
+// Create an instance of the express app.
 var app = express();
+
+// Set the port of our application
+// process.env.PORT lets the port be set by Heroku
 var PORT = process.env.PORT || 8080;
 
 // Serve static content for the app from the "public" directory in the application directory.
@@ -19,10 +22,7 @@ app.use(express.urlencoded({ extended: true }));
 // Parse application body as JSON
 app.use(express.json());
 
-
-// Set Handlebars.
-var exphbs = require("express-handlebars");
-
+// Set Handlebars as the default templating engine.
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 

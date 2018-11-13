@@ -9,6 +9,7 @@ A working version of the application can be found at [https://eattheburger.herok
 * `MySQL`
 * `Node`
 * `Express`
+* `Handlebars`
 * A homemade `ORM` (yum!)
 
 ---
