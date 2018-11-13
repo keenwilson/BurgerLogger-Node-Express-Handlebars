@@ -1,9 +1,9 @@
-<li>
-	{{burger_name}}
+<li class="burger-list__item d-flex justify-content-between">
+	
+	<div class="burger-name">🍔 {{burger_name}}</div>
+	 <button class="change-devoured align-self-baseline burger-form btn btn-sm btn-outline-dark" data-id="{{id}}" data-newdevoured="{{devoured}}">
+		 {{#if devoured}}Devour it!{{else}}Order again!{{/if}}
+		 </button>
 
-	<button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
-		{{#if devoured}}Devour it!{{else}}Ready to serve when you're ready!{{/if}}
-	</button>
-
-	<button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
+	<!-- <button class="delete-burger burger-form btn btn-sm btn-outline-dark" data-id="{{this.id}}">DELETE!</button> -->
 </li>
