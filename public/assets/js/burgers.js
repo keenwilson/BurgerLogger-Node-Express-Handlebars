@@ -3,7 +3,8 @@ $(function() {
     $(".change-devoured").on("click", function(event) {
       var id = $(this).data("id");
       var newDevoured = $(this).data("newdevoured");
-  
+      
+      // Create a request, in this case req.body will be a value of data-newdevoured in the clicked button
       var newDevouredState = {
         devoured: newDevoured
       };
@@ -14,7 +15,7 @@ $(function() {
         data: newDevouredState
       }).then(
         function() {
-          console.log("changed devoured to", ewDevoured);
+          console.log("changed devoured to", newDevoured);
           // Reload the page to get the updated list
           location.reload();
         }
@@ -26,8 +27,7 @@ $(function() {
       event.preventDefault();
   
       var newBurger = {
-        burger_name: $("#burger").val().trim(),
-        devoured: $("[name=devoured]:checked").val().trim()
+        burger_name: $("#burger").val().trim()
       };
   
       // Send the POST request.
