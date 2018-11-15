@@ -2,7 +2,7 @@
 
 A burger logger utilizes MySQL, Express, and Handlebars to allow users to create, update, and read burgers from the database.
 ---
-A working version of the application can be found at [https://eattheburger.herokuapp.com](https://fierce-island-73401.herokuapp.com/  "Eat the Burger!")
+A working version of the application can be found at [https://fierce-island-73401.herokuapp.com](https://fierce-island-73401.herokuapp.com/  "Eat the Burger!")
 
 ---
 ## Technologies used
